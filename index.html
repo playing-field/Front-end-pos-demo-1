@@ -3,28 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
 
 
     <title>Signin Template for Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sign-in/">
+    <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sign-in/">-->
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+
 
     <style>
         body {
             background-color: #e9ecef;
         }
 
-        #outer {
 
-        }
 
 
     </style>
@@ -36,7 +32,6 @@
 <div style="position: relative; margin-top: 100px">
     <div class="row">
         <div class="col col-md-12 col-lg-6">
-
             <img  class="mb-4" src="images/dep-logo.png" alt="" width="150px" >
             <div  style="padding: 0px" class="jumbotron jumbotron-fluid">
                 <div class="container">
@@ -46,20 +41,15 @@
                         company.</p>
                 </div>
             </div>
-
-
-
-
-
         </div>
 
         <div class="col col-md-12 col-lg-6">
-            <div id="outer" class="container border border-dark card" style="width: 450px">
-                <form class="form-signin">
+            <div class="container border border-dark card" style="width: 450px">
+                <form class="form-signin" action="dashboard.html" method="get" enctype="application/x-www-form-urlencoded">
 
 
-                    <!--<img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-                    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+                    <h1 class="h3 mb-3 font-weight-normal">Login to  continue</h1>
                     <br>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <br>
@@ -77,9 +67,12 @@
                     <button id="sign-in" class="btn btn-sm btn-primary btn-block" type="submit">Sign in</button>
                     <hr>
 
-                    <button id="sign-up" class="btn btn-sm btn-link" type="button">Sign Up</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2020 - Visura Prabod</p>
+
                 </form>
+                <form action="sign-up-form.html" method="get" enctype="multipart/form-data">
+                    <button id="sign-up" class="btn btn-sm btn-link" type="submit">Sign Up</button>
+                </form>
+                <p class="mt-5 mb-3 text-muted">&copy; 2020 - Visura Prabod</p>
             </div>
         </div>
     </div>
