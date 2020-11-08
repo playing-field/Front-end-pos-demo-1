@@ -34,6 +34,26 @@
                 font-size: 3.5rem;
             }
         }
+
+        /*Scrrolspy*/
+        #body1 {
+            position: relative;
+            overflow-y: scroll;
+            height: 550px;
+            width: 700px;
+            margin-top: -30px;
+            margin-left: 700px;
+
+        }
+        ul.nav-pills {
+            top: 160px;
+            position: fixed;
+        }
+        div.col-8 div {
+            height: 220px;
+        }
+
+
     </style>
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
@@ -121,8 +141,141 @@
                 </div>
             </div>
 
-            <canvas class="my-4 w-100" id="myChart" width="900" height="380" ></canvas>
+            <div style="display: inline">
+                <div style="padding: 20px">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                        Add New Item
+                    </button>
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Add New Item</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="code">Item Code(Auto generated)</label>
+                                    <input id="code"class="form-control" type="text" placeholder="P001" readonly>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <input type="text" class="form-control" id="description" placeholder="ex: Maliban FullCream Milk Powder-400g">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="quantity">Quantity</label>
+                                        <input type="text" class="form-control" id="quantity" placeholder="ex: 582 ">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unitPrice">Unit Price</label>
+                                        <input type="text" class="form-control" id="unitPrice" placeholder="ex: 250.00">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save Customer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative; bottom: 30px">
+                <section style="float: right;" id="body1" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <nav class="col-sm-3 col-4" id="myScrollspy">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#section1">P-001</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section2">P-002</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section3">P-003</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#section4">P-004</a>
+                                    </li>
+                                </ul>
+                            </nav>
 
+                            <div class="col-sm-9 col-8">
+                                <div id="section1">
+                                    <div class="card mb-3" style="max-width: 540px; height: 200px">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="..." class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section2">
+                                    <div class="card mb-3" style="max-width: 540px; height: 200px">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="..." class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section3">
+                                    <div class="card mb-3" style="max-width: 540px; height: 200px">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="..." class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section4">
+                                    <div class="card mb-3" style="max-width: 540px; height: 200px">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="..." class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
 
         </main>
     </div>
@@ -130,4 +283,3 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </html>
-bootstrap.bundle.min.js
